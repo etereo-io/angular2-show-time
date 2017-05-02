@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <form>
+    <div class="row form-row align-items-center justify-content-center">
+      <div class="col-6 col-sm-2">
+        <span class="text-label">Usuario</span>
+      </div>
+      <div class="col-6 col-sm-3 inner-addon left-addon">
+        <input type="email" [(ngModel)]="user.userName" name="email" class="input-control" id="exampleInputEmail1">
+        <span class="sketchicon sketchicon-mail" aria-hidden="true"></span>
+      </div>
+    </div>
+    <div class="row form-row align-items-center justify-content-center">
+      <div class="col-6 col-sm-2">
+        <span class="text-label">Contraseña</span>
+      </div>
+      <div class="col-6 col-sm-3 inner-addon left-addon">
+        <input type="password" [(ngModel)]="user.password" name="password" class="input-control" id="exampleInputPassword1">
+        <span class="sketchicon sketchicon-lock" aria-hidden="true"></span>
+      </div>
+    </div>
+    <div class="row align-items-center justify-content-center">
+      <div class="col-6 col-sm-4 label-container">
+        <button class="btn btn--primary" (click)="login($event)">Accede</button>
+      </div>
+    </div>
+  </form>
+</div>

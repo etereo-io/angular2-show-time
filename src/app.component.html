@@ -1,0 +1,23 @@
+<div class="app-container container-fluid">
+  <div class="row no-gutters">
+    <div class="col-12">
+      <ui-nav></ui-nav>
+    </div>
+  </div>
+  <div class="row main-module-row">
+    <div class="col-12 main-module-container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <!--<div class="small-window" #window>
+      <i *ngIf="!windowMinimized" class="fa fa-window-minimize" (click)="toggleMinimizeWindow()" aria-hidden="true"></i>
+      <i *ngIf="windowMinimized" class="fa fa-window-maximize" (click)="toggleMinimizeWindow()" aria-hidden="true"></i>
+      <i class="fa fa-window-close" aria-hidden="true"></i>
+      <div class="smal-window-header">
+        <router-outlet name="window-bar"></router-outlet>
+      </div>
+      <div class="small-window-content">
+        <router-outlet name="window-content"></router-outlet>
+      </div>
+  </div>-->
+</div>

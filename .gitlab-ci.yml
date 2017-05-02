@@ -1,0 +1,18 @@
+image: node:7.4.0
+
+stages:
+- setup
+- test
+- build
+- deploy
+
+build:
+  stage: build
+  script:
+    - npm install -g s3-deploy
+    - npm install
+    - npm run test
+    - npm run build:prod
+    - s3-deploy './dist/**' --cwd './dist/' --gzip --region $AWS_REGION --bucket $AWS_BUCKET
+  only:
+    - master

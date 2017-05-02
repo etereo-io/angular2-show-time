@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <form>
+    <div class="row form-row align-items-center justify-content-center">
+      <div class="col-6 col-sm-2">
+        <span class="text-label">Usuario</span>
+      </div>
+      <div class="col-6 col-sm-3 inner-addon left-addon">
+        <input [(ngModel)]="user.userName" type="name" class="input-control" name="name">
+        <span class="sketchicon sketchicon-user" aria-hidden="true"></span>
+      </div>
+    </div>
+    <div class="row form-row align-items-center justify-content-center">
+      <div class="col-6 col-sm-2">
+        <span class="text-label">Contraseña</span>
+      </div>
+      <div class="col-6 col-sm-3 inner-addon left-addon">
+        <input [(ngModel)]="user.password"  type="password" class="input-control" name="password">
+        <span class="sketchicon sketchicon-lock" aria-hidden="true"></span>
+      </div>
+    </div>
+    <div class="row form-row align-items-center justify-content-center">
+      <div class="col-6 col-sm-4">
+        <button type="submit" class="btn btn--primary" (click)="register($event)">Regístrate</button>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "strictNullChecks": false,
+    "allowJs": true,
+    "baseUrl": "./src",
+    "paths": {
+      "*": [
+        "../node_modules/@types/*",
+        "*"
+      ]
+    },
+    "lib": [
+      "dom",
+      "es6"
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+      "types"
+    ],
+    "types": [
+      "jasmine",
+      "node",
+      "selenium-webdriver",
+      "source-map",
+      "uglify-js",
+      "jquery"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "aot",
+    "src/**/*.aot.ts",
+    "src/**/*.spec.ts"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "forkChecker": true,
+    "useWebpackText": true
+  },
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "atom": { "rewriteTsconfig": false }
+}

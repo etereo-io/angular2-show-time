@@ -1,0 +1,177 @@
+@import 'colors';
+@import 'fonts';
+
+.btn {
+  font-size: $regular-font-size;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0;
+  outline: none !important;
+  box-shadow: 0 0 0 1px $main-button-color-highlight;
+}
+
+.btn .link {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.label-input{
+  color: $font-highlight-color;
+  font-weight: bold;
+}
+
+.btn--primary {
+  background-color: #005C5D;
+  padding: 10px 15px;
+  color: white !important;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.btn--inline {
+  display: inline-block;
+}
+
+// .btn--primary:hover {
+//   box-shadow: 0 0 0 2px $main-button-color-highlight;
+// }
+
+.form-group {
+  text-align: left;
+}
+
+.btn--secondary {
+  background-color: $secondary-button-color;
+  color: white;
+  box-shadow: none;
+  padding: 15px 25px;
+}
+
+.btn--circle {
+  border-radius: 50%;
+  border: none;
+  box-shadow: none;
+  padding: 12px 12px;
+  margin: 10px;
+}
+
+.btn--wrong {
+  color: white;
+  background-color: #C71D1D;
+}
+.btn--success {
+  color: white;
+  background-color: #49B03C;
+}
+
+.btn--long {
+  padding: 8px 30px;
+}
+
+.btn a {
+  color: white;
+}
+
+.btn:disabled {
+  cursor: inherit !important;
+}
+
+.btn-group.open .dropdown-toggle{
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.combobox{
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid rgba(0,0,0,.15);
+  box-shadow: none;
+  padding: 10px 20px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.dropdown-menu {
+  width: 100%;
+  cursor: pointer;
+  margin: 0;
+  color: $font-highlight-color;
+  font-weight: bold;
+}
+
+.dropdown-list-item {
+  border-bottom: none !important;
+}
+
+.combobox .caret {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+
+.input-form {
+  margin: 0 auto;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color: #7F7F7F !important;
+}
+
+.input-control {
+    border: 1px solid #dfdfdf;
+    padding: 3px 10px;
+    outline: 0;
+    background: white;
+    border-radius: 3px;
+    display: block;
+    &.input-control--block {
+      width: 100%;
+    }
+}
+
+.input-control:disabled {
+  background-color: #F2F2F2;
+  border: 1px solid #dfdfdf;
+  opacity: .5;
+}
+
+
+
+.input-control--valid {
+  border: 1px solid green;
+}
+.input-control--wrong {
+  border: 1px solid red;
+}
+
+/* enable absolute positioning */
+.inner-addon {
+  position: relative;
+}
+
+.inner-addon .input-control {
+  // padding: 26px 15px 26px 75px;
+  font-size: 1em;
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 0 25px;
+  pointer-events: none;
+  width: 17px;
+  height: 17px;
+  font-size: 1.3em;
+  top: calc(50% - 10px);
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }

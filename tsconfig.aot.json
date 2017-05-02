@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "removeComments": true,
+    "lib": [
+      "dom",
+      "es2015"
+    ],
+    "typeRoots": [
+       "node_modules/@types"
+    ],
+    "types": [
+      "jasmine",
+      "node",
+      "selenium-webdriver",
+      "source-map",
+      "uglify-js",
+      "jquery"
+    ],
+    "outDir": "aot/compiledES5"
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/**/*.spec.ts"
+  ],
+
+  "angularCompilerOptions": {
+   "genDir": "/aot",
+   "skipMetadataEmit" : true,
+   "debug": false
+ }
+}
